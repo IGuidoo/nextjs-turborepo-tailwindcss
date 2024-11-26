@@ -22,8 +22,8 @@
       "dest": "/apps/pages-router/$1"
     },
     {
-      "src": "/(.*)",
-      "dest": "/apps/pages-router/docs/$1"
+      "src": "/((?!docs).*)",
+      "dest": "/apps/app-router/$1"
     }
   ],
   "env": {
