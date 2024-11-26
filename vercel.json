@@ -18,11 +18,15 @@
   ],
   "routes": [
     {
-      "src": "/docs/(.*)",
-      "dest": "/apps/pages-router/$1"
+      "src": "/docs",
+      "dest": "/apps/pages-router/docs"
     },
     {
-      "src": "/((?!docs).*)",
+      "src": "/docs/(.*)",
+      "dest": "/apps/pages-router/docs/$1"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/apps/app-router/$1"
     }
   ],
